@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>News</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Circular Content Carousel with jQuery" />
+        <meta name="keywords" content="jquery, conent slider, content carousel, circular, expanding, sliding, css3" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="cssnew/demo.css" />
+		<link rel="stylesheet" type="text/css" href="cssnew/style.css" />
+		<link rel="stylesheet" type="text/css" href="cssnew/jquery.jscrollpane.css" media="all" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Coustard:900' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css' />
+    </head>
+    <body>   <img src="head.jpg" width="100%" height="150px">
+
+
+<div style="background-color: #fd04a8; height: 40px; width: 100%; display: block; font-size: 25px; padding: 5px;">
+  <a style="color: #000;" href="index.html">Home</a>
+  <a style="color: #000;" href="aboutinfo.html">About</a>
+  <a style="color: #000;" href="services.html">Services</a>
+  <a style="color: #000;" href="Gallery.html">Gallery</a>
+  <a style="color: #000;" href="contact.html">Contacts</a>
+  <a style="color: #000;" href="news.html">News</a>
+  <a style="color: #000;" href="index.php">Products</a>
+</div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+
+     
+ 
+
+ <!--info-->
+    
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="cssinfo/style.css">
+    
+   
+    
+           <!--info-->
+      <div class="parallax">
+       <!--Parallax scrolling is a web site trend where the background content (i.e. an image) is moved at a different speed than the foreground content while scrolling.-->
+  <input type="checkbox" id="menu-toggle" class="hidden">
+  <!--The id attribute specifies a unique id for an HTML element-->
+
+  <label for="menu-toggle">
+    <span class="glyphicon"></span>
+  </label>
+
+<!--/.menu-->
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="What.png" width="490px" height="50px"><br>
+          <hr>
+        </div><!--/.col-md-12-->
+        <!--/.col-sm-4-->
+        <div class="col-sm-4">
+          <img src="Founder.JPG" class="img-responsive">
+          <h4><font color="White"> Dropbox Founder</font></h4>
+          <p><font color="White"> Dropbox founder drops by to inspire and spark collaboration .Drew Houston ’05 chatted with student innovators and shared his latest projects.</font></p>
+        </div><!--/.col-sm-4-->
+        <div class="col-sm-4">
+          <img src="future gadgets.png" class="img-responsive">
+          <h4><font color="White"> Future of Websites</font></h4>
+          <p><font color="White">  The website industry have been continously expanding and evolving, thus, the latest design for the website and web templates have been continously changing. </font></p>
+        </div>
+        <div class="col-sm-4">
+          <img src="Doctor CPE.JPG" class="img-responsive">
+          <h4><font color="White"> Computers for Communication.</font></h4>
+          <p><font color="White"> Computer Programmers has been experimenting on ways on how to improve the websites in terms of communication.</font></p>
+        </div><!--/.col-sm-4-->
+      </div><!--/.row-->
+      
+    </div><!--/.container-->
+  </div><!--/.content-->
+</div><!--/.parallax-->
+
+
+       
+   
+<!-- menu html
+  <link rel="stylesheet" href="cssmen/style.css">
+
+   <div class="wrapper">
+  <input type="checkbox" id="menuToggler" class="input-toggler" value="1" autofocus="true"/>
+  <label for="menuToggler" id="menuTogglerLabel" class="menu-toggler" role="button" aria-pressed="false" aria-expanded="false" aria-label="Navigation button">
+    <span class="menu-toggler__line"></span>
+    <span class="menu-toggler__line"></span>
+    <span class="menu-toggler__line"></span>
+  </label>
+  <nav id="sidebar" class="sidebar" role="navigation" aria-labelledby="menuTogglerLabel" aria-hidden="true">
+    <ul id="menubar" class="menu" role="menubar" aria-orientation="vertical">
+      <li class="menu__item" role"none"><a class="menu__link" href="home.html" role="menuitem" tabindex="-1">Home</a></li>
+      <li class="menu__item" role"none"><a class="menu__link" href="aboutinfo.html" role="menuitem" tabindex="-1">About</a></li>
+      <li class="menu__item" role"none"><a class="menu__link" href="Gallery.html" role="menuitem" tabindex="-1">Events</a></li>
+      <li class="menu__item" role"none"><a class="menu__link" href="services.html" role="menuitem" tabindex="-1">Services</a></li>
+      <li class="menu__item" role"none"><a class="menu__link" href="news.html" role="menuitem" tabindex="-1">News</a></li>
+      <li class="menu__item" role"none"><a class="menu__link" href="contact.html" role="menuitem" tabindex="-1">Contact</a></li>
+      <li class="menu__item" role"none"><a class="menu__link" href="product.html" role="menuitem" tabindex="-1">Products</a></li>
+    </ul>
+  </nav>
+
+</div>
+<a class="sb-link" href="//silvestarbistrovic.from.hr/en/articles/css-sidebar-toggle/">Candy Blocks Inc.</a>
+  
+    <script src="jsmen/index.js"></script>-->
+    <br><br><br><br><br><br><br>
+
+<!--Animals Trivia-->
+		
+		<!-- the jScrollPane script -->
+		<script type="text/javascript" src="jsnew/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="jsnew/jquery.contentcarousel.js"></script>
+		<script type="text/javascript">
+			$('#ca-container').contentcarousel();
+		</script>
+<hr width="100%">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Events to Visit.png" width="500px" height="100px"><br>
+
+		<style>
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+</style>
+
+    <style>
+body {
+  background-image : url('pink1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  width  : 960px;
+  margin : 0 auto;
+}
+
+.container:after{
+  clear   : both;
+  display : table;
+  content : '';
+}
+
+.bg-items {
+  padding: 20px;
+  width  : 240px;
+  height : 160px;
+  margin : 20px;
+  background-color: #fd04a8;
+  float  : left;
+  cursor : pointer;
+  box-shadow : 3px 3px 5px 0px rgba(0,0,0,0.5);
+}
+
+.items {
+  width  : 240px;
+  height : 160px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fd04a8;
+}
+
+.details {
+  background-color : rgba(0,0,0,0.5);
+  width            : 220px;
+  height           : 140px;
+  padding          : 10px;
+  top : 0;
+  left: 0;
+  font-family : georgia;
+  color       : #fff;
+  opacity : 0;
+  transition : opacity .8s;
+}
+
+.details h3 {
+  margin-bottom : 20px;
+}
+
+.details h6 {
+  text-align : right;
+  margin-top : 40px;
+}
+
+.details p {
+  font-size : 14px;
+  font-style: italic;
+  text-align: center;
+  line-height : 20px;
+}
+
+.items:hover .details {
+  opacity : 1;
+  transition : opacity .2s .3s;
+}
+
+.items div {
+  position : absolute;
+}
+
+/* one */
+
+.one {
+  left   : 100%;
+  bottom : 100%;
+  width : inherit;
+  height: inherit;
+  background-color : #fd04a8;;
+  transition   : all .3s;
+}
+
+.items:hover .one {
+  transition   : all .3s;
+  left   : 0;
+  bottom : 0;
+}
+
+/* two */
+
+.two {
+  width : inherit;
+  height: inherit;
+  background-color : #fd04a8;;
+  transition   : all .3s;
+  left   : 0;
+  bottom : 100%;
+}
+
+.items:hover .two {
+  transform : rotate(180deg);
+  left   : 0;
+  bottom : 0;
+  transition   : all .3s;
+}
+
+/* three */
+
+.three {
+  left : 0;
+  top  : 0;
+  width : inherit;
+  height: inherit;
+  background-color : #fd04a8;;
+  transition   : all .3s;
+  transform: scale(0,0);
+}
+
+.items:hover .three {
+  left : 0;
+  top  : 0;
+  transform : scale(1,1);	
+  transition : all .3s;
+}
+
+/* four */
+
+.four {
+  width : inherit;
+  height: inherit;
+  background-color : #fd04a8;;
+  transition   : all .3s;
+  left : 0;
+  top  : 0;
+  transform: scale(0,0) rotate(0deg);
+}
+
+.items:hover .four {
+  left : 0;
+  top  : 0;
+  transform: scale(1,1) rotate(1080deg);
+  transition   : all .3s;
+}
+
+/* five */
+
+.tl5 {
+  border-top   : 161px solid #e43;
+  border-right : 241px solid transparent;
+  top  : -160px;
+  left : -240px;
+  transition   : all .3s;			
+}
+
+.br5 {
+  border-bottom : 161px solid #e43;
+  border-left   : 241px solid transparent;
+  bottom : -160px;
+  right  : -240px;
+  transition   : all .3s;			
+}
+
+.items:hover .tl5 {
+  top  : 0;
+  left : 0;
+  transition   : all .3s;
+}
+
+.items:hover .br5 {
+  bottom : 0;
+  right  : 0;
+  transition   : all .3s;
+}
+
+/* six */
+
+.tl6 {
+  width  : 120px;
+  height : 80px;
+  background-color: #e43;
+  top  : -80px;
+  left : -240px;
+  transition   : all .3s;			
+}
+
+.tr6 {
+  width  : 120px;
+  height : 80px;
+  background-color: #e43;
+  top   : -80px;
+  right : -240px;
+  transition   : all .3s;			
+}
+
+.br6 {
+  width  : 120px;
+  height : 80px;
+  background-color: #e43;
+  bottom: -80px;
+  right : -240px;
+  transition   : all .3s;
+}
+
+.bl6 {
+  width  : 120px;
+  height : 80px;
+  background-color: #e43;
+  bottom : -80px;
+  left   : -240px;
+  transition   : all .3s;
+}
+
+.items:hover .tl6 {
+  top  : 0;
+  left : 0;
+  transition   : all .3s;
+}
+
+.items:hover .tr6 {
+  top   : 0;
+  right : 0;
+  transition   : all .3s;
+}
+
+.items:hover .br6 {
+  bottom : 0;
+  right  : 0;
+  transition   : all .3s;
+}
+
+.items:hover .bl6 {
+  bottom : 0;
+  left   : 0;
+  transition   : all .3s;
+}
+
+/* seven */
+
+.seven {
+  width  : 240px;
+  height : 160px;
+  background-color : #fd04a8;;
+  opacity : 0;
+  transition   : all .3s;
+}
+
+.items:hover .seven {
+  opacity    : 1;
+  transition : all .3s;
+}
+
+/* eight */
+
+.eight {
+  top           : 30%;
+  left          : 10%;
+  border-right  :  100px solid transparent;
+  border-bottom :  70px  solid #e43;
+  border-left   :  100px solid transparent;
+  transform: rotate(35deg) scale(0,0);
+  transition : all .6s;
+}
+
+.eight:before {
+  border-bottom: 80px solid #e43;
+  border-left  : 30px solid transparent;
+  border-right : 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: '';
+  transform: rotate(-35deg);			   
+}
+
+.eight:after {
+  position: absolute;
+  display: block;
+  color: #e43;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid #e43;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: '';
+}
+
+.items:hover .eight {
+  transform: rotate(35deg) scale(3.5,3.5);
+  transition : all .6s;
+
+}
+
+/* nine */
+
+.nine {
+  width : 0;
+  height: 0;
+  top   : 50%;
+  left  : 50%;
+  background-color: #fd04a8;;
+  border-radius : 50%;
+  transition : all .3s;
+}
+
+.items:hover .nine {
+  width : 340px;
+  height: 260px;
+  top   : -50px;
+  left  : -50px;
+  transition : all .6s;
+
+}
+
+/* ten */
+
+.ten {
+  width  : inherit;
+  height : 40px;
+  background-color: #fd04a8;;
+  left   : 100%;
+}
+
+.ten.i {
+  top : 0;
+  transition : all .2s;
+}
+
+.ten.ii {
+  top : 40px;
+  transition : all .4s;
+}
+
+.ten.iii {
+  top : 80px;
+  transition : all .6s;
+}
+
+.ten.iv {
+  top : 120px;
+  transition : all .8s;
+}
+
+.items:hover .i {
+  left : 0;
+  transition : all .2s;			
+}
+
+.items:hover .ii {
+  left : 0;
+  transition : all .4s;
+}
+
+.items:hover .iii {
+  left : 0;
+  transition : all .6s;
+}
+
+.items:hover .iv {
+  left : 0;
+  transition : all .8s;
+}
+
+/* eleven */
+
+.eleven {
+  width  : inherit;
+  height : 40px;
+  background-color: #fd04a8;;
+  transition : all .3s;
+}
+
+.eleven.i {
+  top : 0;
+  left : -100%;
+
+}
+
+.eleven.ii {
+  top : 40px;
+  left : 100%;
+}
+
+.eleven.iii {
+  top : 80px;
+  left : -100%;
+}
+
+.eleven.iv {
+  left : 100%;
+  top  : 120px;
+}
+
+.items:hover .eleven {
+  left : 0;
+  transition : all .4s ;
+}
+
+/* twelve */
+
+.twelve {
+  width  : inherit;
+  height : 40px;
+  background-color: #fd04a8;;
+  transition : all .3s;
+  top : -40px;
+}
+
+.twelve.iv {
+  transition : all .1s;
+}
+
+.twelve.iii {
+  transition : all .1s .1s;
+}
+
+.twelve.ii {
+  transition : all .1s .2s;
+}
+
+.twelve.i {
+  transition : all .1s .3s;
+}
+
+.items:hover .twelve.i {
+  top : 120px;
+  transition : all .2s;
+}
+
+.items:hover .twelve.ii {
+  top : 80px;
+  transition : all .2s .2s ;
+}
+
+.items:hover .twelve.iii {
+  top : 40px;
+  transition : all .2s .4s ;
+}
+
+.items:hover .twelve.iv {
+  top : 0px;
+  transition : all  .2s .6s;
+}
+
+/* thirteen */
+
+.thirteen-r , .thirteen-l{
+  width : 120px;
+  height: inherit;
+  background-color : #fd04a8;;
+  top : 0;
+  transition : all .3s;
+}
+
+.thirteen-r {
+  left : 100%;
+}
+
+.thirteen-l {
+  right : 100%;
+}
+
+.items:hover .thirteen-r {
+  transition : all .3s;
+  left : 0;
+}
+
+.items:hover .thirteen-l {
+  transition : all .3s;
+  right : 0;
+}
+
+/* fourteen */
+
+.fourteen-r , .fourteen-l{
+  width : 120px;
+  height: inherit;
+  background-color : #fd04a8;;
+  top : 0;
+  transition : all .3s;
+}
+
+.fourteen-r {
+  left : 100%;
+}
+
+.fourteen-l {
+  right : 100%;
+}
+
+.items:hover .fourteen-r {
+  transition : all .3s;
+  left : 50%;
+}
+
+.items:hover .fourteen-l {
+  transition : all .3s;
+  right : 50%;
+}
+
+/* fifteen */
+
+.t {
+  border-style : solid;
+  border-width : 80px 120px 0 120px;			
+  border-color : #e43 transparent transparent transparent;
+  transition   : all .3s;
+  top : -80px;
+}
+
+.r {
+  border-style : solid;
+  border-width : 80px 120px 80px 0;	
+  border-color : transparent #e43 transparent transparent;
+  right : -120px;
+  transition   : all .3s;
+}
+
+.b {
+  border-style : solid;
+  border-width : 0 120px 80px 120px;
+  border-color : transparent transparent #e43 transparent;
+  bottom : -80px;
+  transition   : all .3s;
+}
+
+.l {
+  border-style : solid;
+  border-width : 80px 0 80px 120px;	
+  border-color : transparent transparent transparent #e43;
+  left : -120px;
+  transition   : all .3s;
+}
+
+.items:hover .t {
+  top : 0px;
+  transition : all .3s;
+}
+
+.items:hover .r {
+  right : 0px;
+  transition : all .3s;
+}
+
+.items:hover .b {
+  bottom : 0px;
+  transition : all .3s;
+}
+
+.items:hover .l {
+  left : 0px;
+  transition : all .3s;
+}
+
+</style>
+
+    <script src="jsevent/prefixfree.min.js"></script>
+
+<!--GAllery for Events-->
+  <div class="container">
+  <div class="bg-items">
+    <div class="items" style="background-image : url('Y4iT1.png');">
+      <div class="one"></div>
+      <div class="details">
+        <h3>#1</h3>
+        <p>Candy Block Yearly Seminar.</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-items">
+    <div class="items" style="background-image : url('Engineering1.jpg');">
+      <div class="two"></div>
+      <div class="details">
+        <h3>#2</h3>
+        <p>Orientation of the Latest Technologgy</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="bg-items">
+    <div class="items" style="background-image : url('OpenIT Hackathon 1st Place2.jpg');">
+      <div class="nine"></div>
+      <div class="details">
+        <h3>#3</h3>
+        <p>OpenIT Hackathon Event for Charity.</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-items">
+    <div class="items" style="background-image : url('Clean up Part 21.jpg');">
+      <div class="one"></div>
+      <div class="details">
+        <h3>#4</h3>
+        <p>Clean Up Drives.</p>
+        
+      </div>
+    </div>
+  </div>  
+  
+  <div class="bg-items">
+    <div class="items" style="background-image : url('Battle of The Braniacs1.jpg');">
+      <div class="three"></div>
+      <div class="details">
+        <h3>#5</h3>
+        <p>Quiz Shows</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-items">
+    <div class="items" style="background-image : url('computer.jpg');">
+      <div class="two"></div>
+      <div class="details">
+        <h3>#6</h3>
+        <p>Quarterly Computer Checkup</p>
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <script src="jsevent/index.js"></script>
+<br><br>
+
+
+<!--Videos-->
+    <br><br><br><br><br>
+<img src="black.jpg" width="100%" height="150px"><br>
+
+    </body>
+</html>

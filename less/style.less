@@ -1,0 +1,143 @@
+@import 'http://fonts.googleapis.com/css?family=Open+Sans:400,700';
+
+@page-background-main-color: #e74c3c;
+
+@bannerImageBaseUrl: "http://lorempixel.com/300/300/nature/?";
+
+@baseAnimationDelay: 0s;
+@numberOfBoxes: 6;
+@animationSpeed: 1.2s;
+@animationDelayFactor: @animationSpeed / (@numberOfBoxes * 1.5);
+@shadowBlurRadius: 50px;
+
+html{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: @page-background-main-color;
+}
+
+body{
+  font-family: 'Open Sans', arial;
+  font-size: 0.8em;
+  padding: 20px 0px;
+}
+
+.mainContent{
+  perspective: 80em;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.box{
+  float:left;
+  position: relative;
+
+  width: 300px;
+  height: 180px;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0px 0px @shadowBlurRadius fade(@page-background-main-color, 35%);
+  
+  opacity: 0;
+
+  .generateAnimationDelays(@numberOfBoxes);
+
+  h2{
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  p{
+    margin: 0;
+  }
+
+  .box-banner{
+  body { background-image: url("bg2.jpg");
+}
+    height: 80px;
+    margin: 0px -15px;
+    margin-bottom: 6px;
+    background-position: center center;
+  }
+  &.no-text .box-banner{
+      height:129px;
+  }
+
+  .loaded &{
+    opacity:1;
+    animation: animateBoxesFromTopToBottom @animationSpeed backwards;
+  }
+}
+
+.generateAnimationDelays(@counter) when (@counter > 0) {
+  .generateAnimationDelays((@counter - 1)); // next iteration
+  
+  // code for each iteration
+  &:nth-child(@{counter}){
+    animation-delay:( (@counter - 1) * (@animationDelayFactor * @animationSpeed) ) + @baseAnimationDelay !important;
+    z-index: @numberOfBoxes - (@counter - 1);
+    
+    .box-banner{
+      background-image: url("@{bannerImageBaseUrl}@{counter}");
+    }
+  }
+}
+
+@keyframes animateBoxesFromTopToBottom{
+  0%{
+    transform: rotateX(90deg) translateY(-150%);
+    opacity: 0;
+  }
+  100%{
+    transform: rotateX(0deg) translateY(0%);
+    opacity: 1;
+  }
+}
+.toolbar{
+  position: absolute;
+  display:block;
+  z-index:999;
+  
+  top: 0px;
+  right: 0px;
+  width:100%;
+  
+  transform:scale(0);
+  
+  .loaded &{
+    
+    transform:none;
+    animation: showReplayButton @animationSpeed backwards;
+    animation-delay: (@numberOfBoxes * @animationDelayFactor * @animationSpeed) + @baseAnimationDelay + 2s;
+        transform: translateZ(1px);
+  }
+  
+}
+.btn{
+  font-size:1.5em;
+  font-weight: 700;
+  text-decoration:none;
+  background: rgba(0,0,0,0.4);
+  padding: 0px 10px 4px 10px;
+  color: lighten(@page-background-main-color, 10%);
+  display:block;
+  &.left{
+    float:left;
+    font-weight:400;
+  }
+  &.right{
+    float:right;
+  }
+}
+
+@keyframes showReplayButton{
+  0%{
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+  100%{
+    opacity: 1;
+  }
+}

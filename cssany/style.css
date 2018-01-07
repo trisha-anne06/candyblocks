@@ -1,0 +1,130 @@
+body {
+    
+    background-image: url("tr.jpg");
+    background-position: 50% 50%, 50% 50%, 50% 0%;
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: 20px 20px, 10px 10px, 100% 25px;
+    left: -10px;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: relative;
+    width: 960px;
+}
+
+/* Header */
+
+header {
+    background-color: #c4453c;
+    background-image: -webkit-radial-gradient(hsla(0,0%,0%,.025) 10%, transparent 15%),
+                      -webkit-linear-gradient(hsla(0,0%,0%,.2) 0%, hsla(0,0%,100%,0) 100%);
+    background-position: 50% 5px, 50% 0%;
+    background-repeat: repeat, no-repeat;
+    background-size: 10px 10px, 100% 25px;
+    height: 120px;
+    margin: 0 0 70px 20px;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    position: relative;
+    width: 940px;
+}
+header:after {
+    background-image: -webkit-linear-gradient(45deg, #c4453c 25%, transparent 25%, transparent 75%, #c4453c 75%, #c4453c), 
+                      -webkit-linear-gradient(-45deg, #c4453c 25%, transparent 25%, transparent 75%, #c4453c 75%, #c4453c);
+    background-position: 50% 0;
+    background-repeat: repeat-x;
+    background-size: 10px 10px;
+    bottom: -5px;
+    content: '';
+    height: 5px;
+    left: 0;
+    position: absolute; /* Make sure the parent element has a position set */
+    right: 0;
+}
+h1 {
+    color: #333;
+    font: 75px/80px Abel, sans-serif;
+    text-align: center;
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.25);
+}
+
+/* Gallery */
+
+.gallery figure {
+    float: left;
+    height: 200px;
+    margin: 0 0 20px 20px;
+    padding: 0;
+    position: relative;
+    -webkit-perspective: 1000;
+    -webkit-transition: all 1s ease;
+}
+.gallery a {
+    text-decoration: none;
+}
+.gallery img {
+    background: #111;
+    display: block;
+    height: 200px;
+    width: 460px;
+    -webkit-box-shadow: 0 5px 15px -5px hsla(0,0%,0%,.5);
+    -webkit-transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transition: all 1s ease;
+}
+.gallery figcaption {
+    background:red;
+    color: #f6f6f6;
+    display: block;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    width: 440px;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 0 0 hsla(0,0%,0%,0);
+    -webkit-transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 0%;
+    -webkit-transition: all 1s ease;
+}
+.gallery h3 {
+    font: bold 1.25em/1 sans-serif;
+    margin-bottom: 1em;
+}
+.gallery figure:hover {
+    -webkit-transform: translate(0, -150px);
+}
+.gallery figure:hover img {
+    -webkit-box-shadow: 0 0 0 0 hsla(0,0%,0%,0);
+    -webkit-transform: rotateX(90deg);
+}
+.gallery figure:hover figcaption {
+    background: #111;
+    -webkit-box-shadow: 0 30px 15px -20px hsla(0,0%,0%,.5);
+    -webkit-transform: rotateX(0deg);
+}
+
+/* Small */
+
+.small-gallery figure {
+    height: 160px;
+    -webkit-perspective-origin: 50% 25%;
+}
+.small-gallery figure img {
+    height: 160px;
+    width: 220px;
+}
+.small-gallery figure figcaption {
+    height: 100px;
+    width: 200px;
+}
+.small-gallery figure:hover {
+    -webkit-transform: translate(0, -130px);
+}
+
+/* Footer */
+
+footer p {
+    color: #aaa;
+    font: 16px/100px georgia, serif;
+    text-align: center;
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.75);
+}​
